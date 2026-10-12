@@ -132,11 +132,15 @@ export default function FooterDock() {
 				/>
 			)}
 			<Dock
-				className="sticky bottom-[max(0.5rem,env(safe-area-inset-bottom))] z-1 mt-2 max-w-[calc(100vw-1rem)] gap-1 border-0 bg-white/10 p-1 [box-shadow:inset_0_0_0_1px_rgba(0,0,0,0.28)] dark:bg-black/10 dark:[box-shadow:inset_0_0_0_1px_rgba(255,255,255,0.28)] sm:gap-2 sm:p-2"
+				className="sticky bottom-[max(0.5rem,env(safe-area-inset-bottom))] z-1 mt-2 max-w-[calc(100vw-1rem)] gap-1 border-0 bg-white/10 p-1 dark:bg-black/10 sm:gap-2 sm:p-2"
 				iconSize={36}
 				iconDistance={70}
 				iconMagnification={50}
 			>
+				<span
+					aria-hidden="true"
+					className="pointer-events-none absolute inset-0 z-10 rounded-2xl border border-black/30 dark:border-white/30"
+				/>
 				{FOOTER_DATA.navigation.map(({ href, label, icon }) => (
 					<DockIcon key={label}>
 						<Tooltip>

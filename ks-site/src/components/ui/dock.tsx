@@ -149,7 +149,7 @@ const DockIcon = ({
       ref={ref}
       style={{ width: scaleSize, height: scaleSize }}
       className={cn(
-        "flex aspect-square cursor-pointer items-center justify-center rounded-full border border-border",
+        "relative flex aspect-square cursor-pointer items-center justify-center rounded-full",
         resolvedDisableMagnification &&
           "hover:bg-muted-foreground transition-colors",
         className
@@ -157,6 +157,10 @@ const DockIcon = ({
       {...props}
     >
       <div className="size-full">{children}</div>
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-10 rounded-full border border-black/25 dark:border-white/25"
+      />
     </motion.div>
   )
 }
