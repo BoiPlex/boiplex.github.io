@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/paths";
 
 type IconProps = {
   src: string;
@@ -19,7 +20,7 @@ export default function Icon({
       style={{ width: size, height: size }}
     >
       <Image
-        src={src}
+        src={assetPath(src)}
         alt={alt}
         fill
         sizes={`${size}px`}

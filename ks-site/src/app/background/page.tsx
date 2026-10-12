@@ -6,6 +6,7 @@ import Icon from "@/components/icon";
 import { IconCloud } from "@/components/ui/icon-cloud";
 import BadgeDivider from "@/components/badge-divider";
 import * as motion from "motion/react-client";
+import { assetPath } from "@/lib/paths";
 
 export const skills: Skill[] = [
 	// Languages
@@ -239,7 +240,7 @@ export default function BackgroundPage() {
 						<IconCloud
 							images={skills
 								.filter((skill) => skill.iconSrc)
-								.map((skill) => skill.iconSrc!)}
+								.map((skill) => assetPath(skill.iconSrc!))}
 							showControl={false}
 						/>
 					</motion.div>

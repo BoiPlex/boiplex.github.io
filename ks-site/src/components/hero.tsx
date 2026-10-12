@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import SimpleDashboard from "@/components/unused/dashboard-simple";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
+import { assetPath } from "@/lib/paths";
 
 export default function Hero() {
 	return (
@@ -53,7 +54,7 @@ export default function Hero() {
 									width={100}
 									height={100}
 									alt="pfp"
-									src="/pfp.jpg"
+									src={assetPath("/pfp.jpg")}
 									className="size-16 min-[380px]:size-18 sm:size-25"
 								/>
 							</div>

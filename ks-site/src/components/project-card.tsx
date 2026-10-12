@@ -16,6 +16,7 @@ import {
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Project } from "@/lib/types";
+import { assetPath } from "@/lib/paths";
 import { VideoIcon } from "lucide-react";
 import * as motion from "motion/react-client";
 
@@ -39,7 +40,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 						project.video[0] === "/" ? (
 							<video
 								className="w-full h-full aspect-video object-cover"
-								src={project.video}
+								src={assetPath(project.video)}
 								autoPlay
 								loop
 								muted
@@ -54,7 +55,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 						)
 					) : (
 						<Image
-							src={project.image || "/no-image.png"}
+							src={assetPath(project.image || "/no-image.png")}
 							alt={`${project.name} image`}
 							fill
 							className="object-cover"
