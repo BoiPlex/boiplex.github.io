@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
+import { TypeAnimation } from "react-type-animation";
 import { assetPath } from "@/lib/paths";
 
 export default function Hero() {
@@ -11,9 +12,13 @@ export default function Hero() {
 				<div className="flex w-fit max-w-full flex-col gap-6">
 					<div className="flex min-h-20 items-center justify-center gap-6 sm:h-[15vh]">
 						<h1 className="whitespace-nowrap text-3xl min-[380px]:text-4xl sm:text-6xl">
-							<span className="inline-block bg-[linear-gradient(135deg,#ff007f_0%,#7f00ff_50%,#00f0ff_100%)] bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-								Hi, I&apos;m Karim
-							</span>
+							<TypeAnimation
+								sequence={["", 2200, "Hi, I'm Karim"]}
+								speed={1}
+								cursor={false}
+								preRenderFirstString
+								className="inline-block bg-[linear-gradient(135deg,#ff007f_0%,#7f00ff_50%,#00f0ff_100%)] bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]"
+							/>
 						</h1>
 						{/* <motion.div
 							initial={{ opacity: 0, scale: 0, x: -100 }}
@@ -51,9 +56,19 @@ export default function Hero() {
 							</div>
 						</motion.div>
 					</div>
-					<h2 className="min-h-8 text-2xl sm:h-[5vh] sm:text-4xl">
-						Have a look around
-					</h2>
+					<motion.h2
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 3.5 }}
+						className="min-h-8 text-2xl sm:h-[5vh] sm:text-4xl"
+					>
+						<TypeAnimation
+							sequence={["", 4500, "Have a look around"]}
+							deletionSpeed={40}
+							cursor
+							style={{ whiteSpace: "pre-line" }}
+						/>
+					</motion.h2>
 					{/* <div className="flex justify-start gap-10 mt-6">
 						<motion.div whileHover={{ scale: 1.1 }}>
 							<Button className="bg-blue-700 hover:bg-blue-900 text-lg p-5">
