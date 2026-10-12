@@ -16,12 +16,13 @@ export default function Hero() {
 			<div className="flex w-full justify-center">
 				<div className="flex w-fit max-w-full flex-col gap-6">
 					<div className="flex min-h-20 items-center justify-center gap-6 sm:h-[15vh]">
-						<h1 className="whitespace-nowrap text-3xl text-transparent bg-clip-text bg-[linear-gradient(135deg,#ff007f_0%,#7f00ff_50%,#00f0ff_100%)] min-[380px]:text-4xl sm:text-6xl">
+						<h1 className="whitespace-nowrap text-3xl min-[380px]:text-4xl sm:text-6xl">
 							<TypeAnimation
 								sequence={["", 2200, "Hi, I'm Karim"]}
 								speed={1}
 								cursor={false}
 								preRenderFirstString
+								className="inline-block bg-[linear-gradient(135deg,#ff007f_0%,#7f00ff_50%,#00f0ff_100%)] bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]"
 							/>
 						</h1>
 						{/* <motion.div
