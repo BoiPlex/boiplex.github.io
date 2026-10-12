@@ -35,12 +35,12 @@ export default function Hero() {
 						</motion.div> */}
 
 						<motion.div
-							initial={{ opacity: 0, scale: 0, x: -200 }}
+							initial={{ opacity: 0, scale: 0, x: -150 }}
 							animate={{
 								opacity: [0, 1, null],
 								scale: [0, 1, null],
 								rotate: [-720, 0, 360],
-								x: [-200, null, 0],
+								x: [-150, null, 0],
 							}}
 							transition={{
 								duration: 4,
