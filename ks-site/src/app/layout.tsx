@@ -48,7 +48,7 @@ export default function RootLayout({
 			<body className="relative isolate flex min-h-dvh flex-col overflow-x-clip">
 				<ThemeProvider
 					attribute="class"
-					defaultTheme="system"
+					defaultTheme="dark"
 					enableSystem
 				>
 					<TooltipProvider>
