@@ -82,7 +82,9 @@ const dockGuideByPathname: Record<
 
 export default function FooterDock() {
 	const pathname = usePathname();
-	const dockGuide = dockGuideByPathname[pathname];
+	const normalizedPathname =
+		pathname === "/" ? pathname : pathname.replace(/\/+$/, "");
+	const dockGuide = dockGuideByPathname[normalizedPathname];
 	const [copiedEmail, setCopiedEmail] = useState<string | null>(null);
 	const [emailTooltipOpen, setEmailTooltipOpen] = useState(false);
 	const [themeTooltipOpen, setThemeTooltipOpen] = useState(false);
@@ -124,7 +126,7 @@ export default function FooterDock() {
 		<>
 			{dockGuide && (
 				<DockGuideArrow
-					key={pathname}
+					key={normalizedPathname}
 					label={dockGuide.label}
 					target={dockGuide.target}
 				/>
