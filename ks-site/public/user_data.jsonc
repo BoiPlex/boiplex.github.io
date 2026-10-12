@@ -1,0 +1,210 @@
+{
+	"name": "Karim Shami",
+	"contact": {
+		"location": "Moraga, CA",
+		"email": "kkarimshami@gmail.com",
+		"phone": "(925) 320-1677",
+		"linkedin": { "text": "LinkedIn", "url": "https://www.linkedin.com/" },
+		"github": { "text": "GitHub", "url": "https://github.com/" }
+	},
+	"tldr": "Hello, I am a software engineer with experience in full-stack development and machine learning.",
+	"education": [
+		{
+			"school": "University of California, Davis",
+			"location": "Davis, CA",
+			"degree": "B.S. in Computer Science and Engineering",
+			"gpa": "3.5",
+			"graduation": "December 2025",
+			"coursework": [
+				"Data Structures & Algorithms",
+				"Software Engineering",
+				"Operating Systems",
+				"Computer Networks",
+				"AI",
+				"Game Development",
+				"Database Systems",
+				"Computer Architecture",
+				"C/C++",
+				"Program Correctness",
+				"Computer Vision",
+				"Machine Learning"
+			]
+		}
+	],
+	"skills": {
+		"Languages": ["JavaScript", "TypeScript", "Python", "C/C++", "Java"],
+		"Libraries/Frameworks": [
+			"React",
+			"Tailwind CSS",
+			"Next.js",
+			"Node.js",
+			"FastAPI",
+			"Pandas",
+			"Scrapy",
+			"REST APIs"
+		],
+		"Databases": ["PostgreSQL", "MongoDB (noSQL)", "ORMs (like Drizzle)"],
+		"Tools": [
+			"AWS",
+			"Docker",
+			"Git",
+			"Postman",
+			"Agentic frameworks (Claude Code, Cursor)",
+			"MCPs"
+		],
+		"AI/ML": [
+			"TensorFlow",
+			"PyTorch",
+			"LLMs (ChatGPT, Claude, Gemini, etc)",
+			"MediaPipe"
+		]
+	},
+	"experience": [
+		{
+			"title": "Full Stack Founding Engineer",
+			"dates": "11/2025 - 7/2026",
+			"company": "AislePal (self-employed)",
+			"location": "Davis, CA",
+			"bullets": [
+				"Leading development for a full stack MVP for an AI-powered retail shopping web app supporting barcode scanning, personalized recommendations, checkout, user tracing, and store analytics. Deployed and launched successfully.",
+				"Implemented auth, payment system, real-time inventory sync, role management, comprehensive backend, seamless shopping interface, analytics (conversion, traffic, revenue), recs thru matrix factorization.",
+				"Stack: React, Typescript, Tailwind CSS, Next.js, Drizzle ORM, PostgreSQL, AWS, LightFM"
+			]
+		},
+		{
+			"title": "Software Engineer Intern",
+			"dates": "1/2025 - 6/2025",
+			"company": "StudyStudio.ai",
+			"location": "Davis, CA",
+			"bullets": [
+				"Developed a course progress dashboard enabling students to track assignments and deadlines in real time.",
+				"Built a smart planner that automatically schedules tasks using sentiment analysis and behavioral tracking.",
+				"Owned end-to-end full-stack implementation, delivering production-ready features to students.",
+				"Stack: React, JavaScript, Tailwind CSS, Node.js, MongoDB, OpenAI, PyTorch"
+			]
+		},
+		{
+			"title": "Software Developer Intern",
+			"dates": "6/2024 - 9/2024",
+			"company": "Talentrica Inc",
+			"location": "San Francisco, CA",
+			"bullets": [
+				"Automated webinar data processing, reducing manual work by 90% and enabling instant certificate generation.",
+				"Launched and maintained company website, improving online visibility and client engagement.",
+				"Stack: Python, Pandas, HTML, CSS, JavaScript"
+			]
+		},
+		{
+			"title": "Software Engineer Intern",
+			"dates": "2/2024 - 4/2024",
+			"company": "Infinite Options",
+			"location": "San Jose, CA",
+			"bullets": [
+				"Contributed to full-stack development, owning React features with an emphasis on bug fixing and quality control.",
+				"Worked on event registration and property management platforms with secure user role functionality.",
+				"Stack: React, JavaScript, Tailwind CSS, Node.js, PostgreSQL"
+			]
+		}
+	],
+	"projects": [
+		// Backend/DB Projects
+		{
+			"name": "L-Store Database System",
+			"dates": "1/2025 - 3/2025",
+			"bullets": [
+				"Implemented a lineage-based columnar DBMS in Python using custom in-memory data structures (no external DB libraries) with multi-version concurrency control, transaction updates with rollback, base/tail page architecture for efficient record versioning, and primary-key indexing.",
+				"Built page-based buffer pool management with LRU page replacement, disk persistence, and async merge reconciliation.",
+				"Stack: Python"
+			]
+		},
+		// ML Projects
+		{
+			"name": "Hand-Computer Control Interface",
+			"dates": "2025",
+			"bullets": [
+				"Computer Vision Class Project",
+				"Developed a hand-computer-control interface, enabling computer-mouse control with 95% accuracy.",
+				"Able to do anything such as browse the web, draw, play chess, or control Minecraft ",
+				"Stack: Python, OpenCV, MediaPipe, PyTorch"
+			]
+		},
+		{
+			"name": "Image Colorization ML Model",
+			"dates": "2025",
+			"bullets": [
+				"ML Class Project",
+				"Designed and trained a grayscale-to-color CNN regressor ML model, achieving a 26% improvement over the baseline model.",
+				"Stack: Python, Flask, PyTorch, HTML, CSS, JavaScript"
+			]
+		},
+		{
+			"name": "Dog Breed Classification",
+			"dates": "2024",
+			"bullets": [
+				"AI Class Project",
+				"Built a CNN-based dog breed classifier achieving 90% accuracy on 20,000+ images across 120 dog breeds.",
+				"Stack: Python, Streamlit, TensorFlow"
+			]
+		},
+		{
+			"name": "MoodMonitor",
+			"dates": "04/2024",
+			"bullets": [
+				"HackDavis 24h Hackathon",
+				"Designed a Flutter app with FastAPI backend to perform real-time facial emotion recognition.",
+				"Stack: Flutter, Dart, Python, FastAPI"
+			]
+		},
+		{
+			"name": "PalmReader",
+			"dates": "4/2025",
+			"bullets": [
+				"HackDavis 24h Hackathon",
+				"Built a real-time sign language translation app, supporting 30+ ASL letters and common gestures. ",
+				"Stack: Python, MediaPipe, TensorFlow, JavaScript, TypeScript"
+			]
+		},
+		// LLM Projects
+		{
+			"name": "FlowState",
+			"dates": "5/2026",
+			"bullets": [
+				"HackDavis 24h Hackathon",
+				"Developed an AI-powered focus companion for ADHD that tracks/displays browser activity and distraction patterns.",
+				"Stack: React, Plasmo, Javascript, CSS, Tailwind CSS, Python, FastAPI, Gemini, MongoDB"
+			]
+		},
+		// Embedded/IoT Projects
+		{
+			"name": "StepWise",
+			"dates": "4/2025 - 6/2025",
+			"bullets": [
+				"Engineered a portable IoT pedometer for real-time step tracking and GPS route mapping using accelerometer data.",
+				"Integrated with AWS IoT Core and Lambda for remote monitoring and control, with Google Maps visualization.",
+				"Stack: C Language, CC3200 Board, GPS, Accelerometer, OLED display, AWS.",
+				"Protocols: I2C, UART, GPIO, SPI, HTTP"
+			]
+		},
+
+		// Game Dev Projects
+		{
+			"name": "Space Chase",
+			"dates": "10/2024 - 12/2024",
+			"bullets": [
+				"Game Dev Class Project",
+				"Led a 4-person team to publish a 2-player platformer showcased to 200+ students/faculty.",
+				"Received strong reception from judges and were invited to feature in the end-of-year exhibition.",
+				"Stack: Godot, GDScript"
+			]
+		},
+		{
+			"name": "Orbitron",
+			"dates": "07/2025",
+			"bullets": [
+				"Game Jam",
+				"Made a top-down tower defense clicker game with gravity mechanics and an orbital system.",
+				"Stack: Godot, GDScript"
+			]
+		}
+	]
+}
