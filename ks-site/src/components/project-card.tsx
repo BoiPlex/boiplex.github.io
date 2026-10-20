@@ -1,6 +1,7 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
+import * as motion from "motion/react-client";
+
 import {
 	Card,
 	CardAction,
@@ -10,21 +11,21 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
+import { LuGithub, LuGlobe } from "react-icons/lu";
 import {
 	Tooltip,
 	TooltipContent,
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Project } from "@/lib/types";
-import { assetPath } from "@/lib/paths";
-import { VideoIcon } from "lucide-react";
-import * as motion from "motion/react-client";
+import { cloneElement, isValidElement } from "react";
 
+import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import Link from "next/link";
-import { cloneElement, isValidElement } from "react";
-import { LuGithub, LuGlobe } from "react-icons/lu";
+import { Project } from "@/lib/types";
 import { SiDevpost } from "react-icons/si";
+import { VideoIcon } from "lucide-react";
+import { assetPath } from "@/lib/paths";
 
 const QUALITY = 500;
 
@@ -72,10 +73,8 @@ export default function ProjectCard({ project }: { project: Project }) {
 							{project.date}
 						</p>
 					</CardTitle>
-
-					<CardDescription>{project.description}</CardDescription>
 				</div>
-				<CardAction className="absolute flex gap-4">
+				<CardAction className="flex gap-4">
 					{Object.entries(project.links).map(
 						([name, { href, tooltip, icon }]) => (
 							<Tooltip key={name}>
@@ -115,7 +114,8 @@ export default function ProjectCard({ project }: { project: Project }) {
 					)}
 				</CardAction>
 			</CardHeader>
-			<CardContent className="">
+			<CardContent className="-mt-4">
+				<CardDescription>{project.description}</CardDescription>
 				<div className="flex flex-wrap gap-2">
 					{project.skills.map((skill) => (
 						<Badge key={skill} variant="secondary" className="">

@@ -42,7 +42,7 @@ export default function DockGuideArrow({
 				visible: { opacity: 1, y: 0 },
 				hover: { opacity: 1, y: 0 },
 			}}
-			transition={{ duration: 0.5, delay: target === "experience" ? 6 : 0 }}
+			transition={{ duration: 0.5, delay: target === "experience" ? 4 : 0 }}
 			className={cn(
 				"group mx-auto flex w-65 flex-col items-center pt-8",
 				className,

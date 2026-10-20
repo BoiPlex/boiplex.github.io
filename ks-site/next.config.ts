@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const basePath = process.env.PAGES_BASE_PATH ?? "";
 
 const nextConfig: NextConfig = {
+	allowedDevOrigins: ['unrallying-impracticably-shay.ngrok-free.dev'],
 	output: "export",
 	trailingSlash: true,
 	basePath,
