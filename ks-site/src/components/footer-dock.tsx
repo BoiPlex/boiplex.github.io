@@ -1,27 +1,28 @@
 "use client";
 
-import DockGuideArrow from "@/components/dock-guide-arrow";
-import ThemeToggle from "@/components/theme-toggle";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Dock, DockIcon } from "@/components/ui/dock";
-import { Separator } from "@/components/ui/separator";
-import {
-	Tooltip,
-	TooltipContent,
-	TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
-import { useTheme } from "@teispace/next-themes";
 import {
 	BriefcaseBusinessIcon,
 	FolderCodeIcon,
 	HouseIcon,
 	MailIcon,
 } from "lucide-react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { Dock, DockIcon } from "@/components/ui/dock";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { useEffect, useRef, useState } from "react";
+
+import DockGuideArrow from "@/components/dock-guide-arrow";
+import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
+import ThemeToggle from "@/components/theme-toggle";
+import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
+import { useTheme } from "@teispace/next-themes";
 
 const FOOTER_DATA = {
 	navigation: [
@@ -222,7 +223,7 @@ export default function FooterDock() {
 								onClick={() => setThemeTooltipOpen(true)}
 							/>
 						</TooltipTrigger>
-						<TooltipContent>{theme === "dark" ? "Toggle to Ugly White" : "Toggle to Gigachad Dark"}</TooltipContent>
+						<TooltipContent>{theme === "dark" ? "Toggle to Ugly White" : "Toggle to Dark"}</TooltipContent>
 					</Tooltip>
 				</DockIcon>
 			</Dock>
