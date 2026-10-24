@@ -2,13 +2,13 @@ import "@/app/globals.css";
 
 import { DM_Sans, Geist, Geist_Mono } from "next/font/google";
 
-import type { Metadata } from "next";
-import { ThemeProvider } from "@teispace/next-themes";
-import { cn } from "@/lib/utils";
 import Background from "@/components/background";
 import FooterDock from "@/components/footer-dock";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import Header from "@/components/header";
+import type { Metadata } from "next";
+import { ThemeProvider } from "@teispace/next-themes";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { cn } from "@/lib/utils";
 
 const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -25,6 +25,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "Karim Shami's Site",
 	description: "Personal website to showcase experience and projects.",
+	openGraph: {
+		images: [
+			{
+				url: "/pfp.jpg",
+			}
+		]
+	}
 };
 
 export default function RootLayout({
