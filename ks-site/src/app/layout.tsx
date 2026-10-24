@@ -28,7 +28,10 @@ export const metadata: Metadata = {
 	openGraph: {
 		images: [
 			{
-				url: "/pfp.jpg",
+				url: "/screenshot-home.png",
+				width: 1200,
+				height: 630,
+				alt: "Thumbnail preview image"
 			}
 		]
 	}
