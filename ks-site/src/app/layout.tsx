@@ -23,9 +23,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://karimshami.com"),
 	title: "Karim Shami's Site",
 	description: "Personal website to showcase experience and projects.",
 	openGraph: {
+		url: "/",
+		type: "website",
 		images: [
 			{
 				url: "/screenshot-home.png",
